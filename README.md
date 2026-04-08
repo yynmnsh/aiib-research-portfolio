@@ -123,7 +123,7 @@ aiib-research-portfolio/
 │   ├── app.py                                          ← Country Net-Zero Analysis
 │   └── requirements.txt
 └── phd_brief/
-    └── (linked from [OR portfolio](https://phd-research-brief.streamlit.app/))
+    └── (linked from OR portfolio)
 ```
 
 ---
