@@ -208,10 +208,10 @@ with tab1:
                 fillcolor=SECTORS[sec]['color'].replace(')', ',0.6)').replace('rgb','rgba') if 'rgb' in SECTORS[sec]['color'] else SECTORS[sec]['color'],
             ))
     fig_area.add_vline(x=2024, line_dash='dash', line_color='white', opacity=.4,
-        annotation_text='Historical | Projected', annotation_position='top')
-    fig_area.update_layout(height=400, plot_bgcolor='white', margin=dict(t=20,b=20),
+        annotation_text='Historical | Projected', annotation_position='top right') # Geser anotasi ke kanan
+    fig_area.update_layout(height=400, plot_bgcolor='white', margin=dict(t=40,b=20), # Tambah margin atas (t=40)
         yaxis=dict(title='Emissions (MtCO2e)',gridcolor='#f1f5f9'),
-        legend=dict(orientation='h',y=1.08,x=.5,xanchor='center',font=dict(size=10)))
+        legend=dict(orientation='h',y=-0.15,x=.5,xanchor='center',font=dict(size=10))) # Pindah legenda ke bawah
     st.plotly_chart(fig_area, use_container_width=True)
 
     # NDC scenario pathways
@@ -281,7 +281,10 @@ with tab2:
         coastlinecolor='#1e293b',countrycolor='#1e293b',showframe=False,
         lataxis_range=[-12,8],lonaxis_range=[92,145],fitbounds='locations')
     fig_prov.update_layout(paper_bgcolor='#06080f',height=450,margin=dict(t=10,b=10,l=10,r=10),
-        coloraxis_colorbar=dict(title='Carbon Int.',tickfont=dict(color='#94a3b8'),titlefont=dict(color='#e2e8f0')),
+        coloraxis_colorbar=dict(
+            title=dict(text='Carbon Int.', font=dict(color='#e2e8f0')), 
+            tickfont=dict(color='#94a3b8')
+        ),
         font=dict(color='#e2e8f0'))
     st.plotly_chart(fig_prov, use_container_width=True)
 
