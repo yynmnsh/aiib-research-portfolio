@@ -28,7 +28,7 @@ This portfolio demonstrates geospatial analysis, causal inference, and data visu
 
 | # | Artefact | What It Shows | Platform | Link |
 |---|----------|---------------|----------|------|
-| 5 | **PhD Research Brief: Crypto Tax Compliance** | Mixed-methods research design (experiment + survey N=220 + interviews), SEM/CFA, triadic Slippery Slope Framework, compliance behaviour theory — demonstrates econometric and research methodology skills. | Streamlit | [Open App](STREAMLIT_URL_PHD_BRIEF) |
+| 5 | **PhD Research Brief: Crypto Tax Compliance** | Mixed-methods research design (experiment + survey N=220 + interviews), SEM/CFA, triadic Slippery Slope Framework, compliance behaviour theory — demonstrates econometric and research methodology skills. | Streamlit | [Open App](https://phd-research-brief.streamlit.app/) |
 
 *Note: Artefact #5 is shared with the Operational Risk Intern portfolio — it demonstrates transferable research and analytical skills.*
 
@@ -123,7 +123,7 @@ aiib-research-portfolio/
 │   ├── app.py                                          ← Country Net-Zero Analysis
 │   └── requirements.txt
 └── phd_brief/
-    └── (linked from OR portfolio)
+    └── (linked from [OR portfolio](https://phd-research-brief.streamlit.app/))
 ```
 
 ---
