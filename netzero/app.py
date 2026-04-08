@@ -126,8 +126,8 @@ def build_data():
     re_data = []
     for yr in YEARS:
         if yr <= 2024:
-            solar = max(0, 0.05 * (yr-2015)**1.8)
-            wind = max(0, 0.02 * (yr-2018)**1.5) if yr>=2018 else 0
+            solar = 0.05 * max(0, yr-2015)**1.8
+            wind = 0.02 * max(0, yr-2018)**1.5
             geo = 2.1 + 0.05*(yr-2010)
             hydro = 6.0 + 0.15*(yr-2010)
             bio = 1.8 + 0.1*(yr-2010)
